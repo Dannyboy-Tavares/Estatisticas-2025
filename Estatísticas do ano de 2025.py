@@ -31,7 +31,7 @@ if dados:
             except FileNotFoundError:
                 return pd.DataFrame()
 
-        df = carregar_dados(vendas_1):
+        df=carregar_dados(vendas_1)
         st.table(df)
 
 else:
