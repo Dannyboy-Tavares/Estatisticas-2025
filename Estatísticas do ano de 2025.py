@@ -52,7 +52,7 @@ if Menu == "Widgets":
         texto = f"Eu tenho {sd} anos!"
         st.success(texto)
 
-if Menu == "Gráficos Estatísticos":
+if Menu == "Gráficos Estatística":
     col1, col2, col3 = st.columns([0.3, 0.1, 0.6])
 
     with co1:
