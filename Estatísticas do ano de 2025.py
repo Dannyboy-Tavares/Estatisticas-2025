@@ -14,11 +14,15 @@ Menu = option_menu(menu_title="Menu",
         menu_icon="cast",
         default_index=0,
         orientation="horizontal"
-    )
+        )
 
 with st.sidebar:
         st.success("**UPLOAD DE DADOS**")
         dados = st.file_uploader(
+        "",
         type=["xlsx", "xls"]
-
-)
+        )
+        
+if dados:
+        def carregar_dados(dados):
+                try:
