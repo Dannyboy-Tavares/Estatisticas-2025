@@ -12,7 +12,7 @@ Menu = option_menu(menu_title="Menu",
         options=["Inicio", "Gráficos Estatística", "Gráficos dinâmicos", "Widgets", "Formulário"],
         icons=["house", "bar-chart", "bar-chart-line", "toggles", "bar-chart"],
         menu_icon='cast'
-        default_index=0
+        default_index=0,
         orientation="horizontal"
     )
 
