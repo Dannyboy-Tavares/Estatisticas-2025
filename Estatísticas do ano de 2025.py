@@ -32,7 +32,7 @@ with st.sidebar:
                 return pd.DataFrame()
         df = carregar_dados(dados)
         st.table(df)
-        else:
+else:
     st.info("Carregue um ficheiro excel para começar")
       
 if Menu == "Inicio":
