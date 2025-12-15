@@ -16,7 +16,7 @@ Menu = option_menu(menu_title="Menu",
         orientation="horizontal"
         )
 
-
+(
 with st.sidebar:
     st.success("**UPLOAD DE DADOS**")
     dados = st.file_uploader(
@@ -37,7 +37,7 @@ with st.sidebar:
         
     else:
         st.info("Carregue um ficheiro excel para começar")
-        
+)      
 if Menu == "Inicio":
     with st.expander("**Sobre o Instituto Nacional de Estatística**"):
         st.write("Acesse o site www.ine.cv")
