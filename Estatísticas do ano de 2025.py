@@ -22,6 +22,7 @@ with st.sidebar:
         "Carregue um ficheiro de dados",
         type=["xlsx", "xls", "csv"]
     )
+        
     if dados:
         def carregar_dados(dados):
             try:
