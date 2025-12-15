@@ -68,7 +68,7 @@ with col2:
         lab = ["Python", "Java", "C++", "JavaScript"]
         pop = [45, 25, 15, 15]
         fig, ax = plt.subplots()
-        ax.pie(pop, labels=lab, autopct="%1.1f%%" startangle=90)
+        ax.pie(pop, labels=lab, autopct="%1.1f%%", startangle=90)
         ax.set_title("Gráfico Circular")
         ax.axis("equal")
         st.pyplot(fig)
