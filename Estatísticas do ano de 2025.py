@@ -24,14 +24,14 @@ with st.sidebar:
         )
         
 if dados:
-        def carregar_dados(vendas):
+        def carregar_dados(vendas_1):
             try:
-                df = pd.read_csv(vendas)
+                df = pd.read_excel(vendas_1)
                 return df
             except FileNotFoundError:
                 return pd.DataFrame()
 
-        df = carregar_dados(vendas)
+        df = carregar_dados(vendas_1)
         st.table(df)
 
 else:
