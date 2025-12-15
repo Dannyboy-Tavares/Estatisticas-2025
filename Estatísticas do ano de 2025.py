@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.axes3d import Axes3D
 import numpy as np
 
-    Menu = option_menu(
+Menu = option_menu(
         "Navegação", ["Iniciar", "Estatística", "Pesquisar", "Dados"],
         menu_icon="cast",
         icons=["house", "bar-chart", "search", "graph-up-arrow"],
