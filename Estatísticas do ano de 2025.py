@@ -52,3 +52,23 @@ if Menu == "Widgets":
         texto = f"Eu tenho {sd} anos!"
         st.success(texto)
 
+if Menu == "Gráficos Estatísticos":
+    col1, col2, col3 = st.columns([0.3, 0.1, 0.6])
+
+    with co1:
+        st.subheader("Coluna 1")
+        dados.hist = [3, 9, 5, 12, 6, 7, 5, 10, 6, 10]
+        fig, ax = plt.subplots()
+        ax.hist(dados_hist, bin=5, color="skyblue", edgecolor="black")
+        ax.set_title("Histograma")
+        st.pyplot(fig)
+
+with col2:
+        st.subheader("Coluna 2")
+        lab = ["Python", "Java", "C++", "JavaScript"]
+        pop = [45, 25, 15, 15]
+        fig, ax = plt.subplots()
+        ax.pie(pop, labels=lab, autopct="%1.1f%%" startangle=90)
+        ax.set_title("Gráfico Circular")
+        ax.axis("equal")
+        st.pyplot(fig)
