@@ -57,7 +57,7 @@ if Menu == "Gráficos Estatística":
 
     with col1:
         st.subheader("Coluna 1")
-        dados.hist = [3, 9, 5, 12, 6, 7, 5, 10, 6, 10]
+        dados_hist = [3, 9, 5, 12, 6, 7, 5, 10, 6, 10]
         fig, ax = plt.subplots()
         ax.hist(dados_hist, bins=5, color="skyblue", edgecolor="black")
         ax.set_title("Histograma")
