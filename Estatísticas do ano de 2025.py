@@ -53,5 +53,5 @@ if menu == "Widgets":
                        )
 
 texto = f"Eu tenho {sd} anos!"
-st. success(testo)
+st.success(testo)
 
