@@ -23,7 +23,7 @@ with st.sidebar:
     type=["xlsx", "xls", "csv"]
     )
         
-   if dados:
+     if dados:
         def carregar_dados(dados):
             try:
                 df = pd.read_excel(dados)
@@ -31,7 +31,7 @@ with st.sidebar:
             except FileNotFoundError:
                 return pd.DataFrame()
 
-        df = carregar_dados(dados)
+     df = carregar_dados(dados)
 st.table(df)
 
 else:
