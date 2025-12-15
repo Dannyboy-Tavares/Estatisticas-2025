@@ -8,7 +8,7 @@ import numpy as np
 
 st.title ("Estatísticas do ano de 2025")
 
-Menu = option_menu(menu_title="Menu"
+Menu = option_menu(menu_title="Menu",
         options=["Inicio", "Gráficos Estatística", "Gráficos dinâmicos", "Widgets", "Formulário"],
         icons=["house", "bar-chart", "bar-chart-line", "toggles", "bar-chart"],
         menu_icon='cast'
