@@ -17,11 +17,11 @@ Menu = option_menu(menu_title="Menu",
         )
 
 with st.sidebar:
-        st.success("**UPLOAD DE DADOS**")
-        dados = st.file_uploader(
-        "Carregue um ficheiro de dados",
-        type=["xlsx", "xls", "csv"]
-        )
+    st.success("**UPLOAD DE DADOS**")
+    dados = st.file_uploader(
+    "Carregue um ficheiro de dados",
+    type=["xlsx", "xls", "csv"]
+    )
         
    if dados:
         def carregar_dados(dados):
@@ -32,7 +32,7 @@ with st.sidebar:
                 return pd.DataFrame()
 
         df = carregar_dados(dados)
-        st.table(df)
+st.table(df)
 
 else:
         st.info("Carregue um ficheiro excel para começar")
