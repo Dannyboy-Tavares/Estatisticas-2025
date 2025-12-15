@@ -1,8 +1,8 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
-#import matplotlib as mpl
-#import matplotlib.pyplot as plt
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 #from mpl_toolkits.mplot3d.axes3d import Axes3D
 import numpy as np
 
@@ -16,3 +16,9 @@ Menu = option_menu(menu_title="Menu",
         orientation="horizontal"
     )
 
+with st.sidebar:
+        st. success("**UPLOAD DE DADOS**")
+        dados = st.file_uploader(
+        type=[xlsx", "xls"]
+
+)
