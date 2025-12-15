@@ -63,7 +63,7 @@ if Menu == "Gráficos Estatísticos":
         ax.set_title("Histograma")
         st.pyplot(fig)
 
-with col3:
+    with col3:
         st.subheader("Coluna 2")
         lab = ["Python", "Java", "C++", "JavaScript"]
         pop = [45, 25, 15, 15]
