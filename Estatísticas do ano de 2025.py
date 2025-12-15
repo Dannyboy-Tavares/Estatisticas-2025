@@ -16,7 +16,6 @@ Menu = option_menu(menu_title="Menu",
         orientation="horizontal"
         )
 
-(
 with st.sidebar:
     st.success("**UPLOAD DE DADOS**")
     dados = st.file_uploader(
@@ -33,17 +32,16 @@ with st.sidebar:
                 return pd.DataFrame()
 
     df = carregar_dados(dados)
-    st.table(df)
-        
+    st.table(df)    
     else:
         st.info("Carregue um ficheiro excel para começar")
-)      
+      
 if Menu == "Inicio":
     with st.expander("**Sobre o Instituto Nacional de Estatística**"):
         st.write("Acesse o site www.ine.cv")
         st.image("INE.png")
 
-if menu == "Widgets":
+if Menu == "Widgets":
         bt = st.button("Dê um clique!")
 
         if bt:
