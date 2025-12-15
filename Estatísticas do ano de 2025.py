@@ -20,7 +20,7 @@ with st.sidebar:
         st.success("**UPLOAD DE DADOS**")
         dados = st.file_uploader(
         "Carregue um ficheiro de dados",
-        type=["xlsx", "xls"]
+        type=["xlsx", "xls", "csv"]
         )
         
 if dados:
