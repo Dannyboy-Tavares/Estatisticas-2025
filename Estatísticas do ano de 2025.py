@@ -23,7 +23,7 @@ with st.sidebar:
         type=["xlsx", "xls", "csv"]
         )
         
-if dados:
+   if dados:
         def carregar_dados(dados):
             try:
                 df = pd.read_excel(dados)
@@ -53,5 +53,5 @@ if menu == "Widgets":
                        )
 
 texto = f"Eu tenho {sd} anos!"
-st.success(testo)
+st.success(texto)
 
