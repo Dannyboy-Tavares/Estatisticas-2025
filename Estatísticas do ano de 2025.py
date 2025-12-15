@@ -55,7 +55,7 @@ if Menu == "Widgets":
 if Menu == "Gráficos Estatística":
     col1, col2, col3 = st.columns([0.3, 0.1, 0.6])
 
-    with co1:
+    with col1:
         st.subheader("Coluna 1")
         dados.hist = [3, 9, 5, 12, 6, 7, 5, 10, 6, 10]
         fig, ax = plt.subplots()
