@@ -16,7 +16,7 @@ Menu = option_menu(menu_title="Menu",
         orientation="horizontal"
         )
 
-st.table(df)
+
 with st.sidebar:
     st.success("**UPLOAD DE DADOS**")
     dados = st.file_uploader(
@@ -33,7 +33,8 @@ with st.sidebar:
                 return pd.DataFrame()
 
     df = carregar_dados(dados)
-    
+    st.table(df)
+        
     else:
         st.info("Carregue um ficheiro excel para começar")
         
