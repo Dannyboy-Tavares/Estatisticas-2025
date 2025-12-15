@@ -35,7 +35,7 @@ with st.sidebar:
     st.table(df)
 
     else:
-        st.info("Carregue um ficheiro excel para começar")
+    st.info("Carregue um ficheiro excel para começar")
         
 if Menu == "Inicio":
     with st.expander("**Sobre o Instituto Nacional de Estatística**"):
